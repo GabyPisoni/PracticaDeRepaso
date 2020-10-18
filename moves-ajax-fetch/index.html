@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Movies</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Contenedor para las peliculas -->
+    <div id="moves"></div>
+
+    <!-- div con imagen y botón de cierre para el zoom -->
+    <div id="zoomTop" class="oculto">
+      <img src="" alt="Vista completa de tapa" />
+      <button id="cerrar" onclick="cierreZoom()">X</button>
+    </div>
+
+    <!-- div para hacer un sombreado que "inhabilite" el fondo cuando muestro ventana tipo modal -->
+    <div id="sombreado" class="oculto"></div>
+    <!--probar cambiando a fetchReq para comprobar que funciona el metodo fetch-->
+
+    <script src="script/ajaxReq/getAjax.js"></script>
+    <!--probar cambiando a V2 si se quiere probar la otra version de la funcion para crear las peliculas -->
+    <script src="script/createMove/fCreateMove.js"></script>
+    <script src="script/xImage/fXImage.js"></script>
+  </body>
+</html>
