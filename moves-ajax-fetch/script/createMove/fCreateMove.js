@@ -76,7 +76,24 @@ function crearDivMoves(dateMoves) {
   listDate.appendChild(itemPrecio);
   // Agrego el <lu> dentro del <div> contenedor
   divResult.appendChild(listDate);
+let itemButton = document.createElement("button")
+itemButton.textContent = "Fav"
+itemButton.classList.add("classFalse")
+listDate.appendChild(itemButton)
+var boleano = false;
+// Array para  pushear cada vez que entre en true 
+var arrayFav = []
+itemButton.onclick = function (){
+  boleano = !boleano
+ if(boleano){
+   itemButton.classList.add("classTrue")
+   itemButton.classList.remove("classFalse")
 
+  }   else {
+    itemButton.classList.add("classFalse")
+    itemButton.classList.remove("classTrue")
+  }
+};
   // Retorno ese div con todos los elementos
   return divResult;
 }
