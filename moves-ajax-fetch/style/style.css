@@ -2,6 +2,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#general{
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);}
 /* Este elemento ocupa toda la pantalla y es un negro semi-transparente */
 #sombreado {
     width: 100%;
@@ -45,10 +47,20 @@
 }
 
 .contenedor-move {
-    border: 1px solid gray;
+    border: 1px ;
     width: 500px;
     padding: 10px;
     margin: 10px;
+    -webkit-box-shadow: 10px 10px 74px 2px rgb(115, 128, 0);
+-moz-box-shadow: 10px 10px 74px 2px  rgb(115, 128, 0);
+box-shadow: 10px 10px 74px 2px  rgb(115, 128, 0);
+
+
+border-radius: 38px 38px 38px 38px;
+-moz-border-radius: 38px 38px 38px 38px;
+-webkit-border-radius: 38px 38px 38px 38px;
+border: 15px ridge #0cf53b;
+
     
 }
 
